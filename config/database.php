@@ -28,6 +28,31 @@ return array
 		'charset'      => 'utf8',
 		'caching'      => FALSE,
 	),
+	'default_mysqli' => array(
+		'type' => 'MySQLi',
+		'connection' => array(
+			/**
+			 * The following options are available for MySQL:
+			 *
+			 * string   hostname    server hostname
+			 * string   port        server port
+			 * string   socket      server socket
+			 * string   database    database name
+			 * string   username    database username
+			 * string   password    database password
+			 * boolean  persistent  use persistent connections?
+			 * array    variables   system variables as "key => value" pairs
+			 */
+			'hostname'   => 'localhost',
+			'database'   => 'kohana',
+			'username'   => FALSE,
+			'password'   => FALSE,
+			'persistent' => FALSE
+		),
+		'table_prefix' => '',
+		'charset'      => 'utf8',
+		'caching'      => FALSE
+	),
 	'alternate' => array(
 		'type'       => 'PDO',
 		'connection' => array(
