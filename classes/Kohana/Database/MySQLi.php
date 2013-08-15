@@ -44,7 +44,7 @@ class Kohana_Database_MySQLi extends Database {
 
 		try
 		{
-			$this->_connection = new mysqli($hosname, $username, $password, null, $port, $socket);
+			$this->_connection = new mysqli($hostname, $username, $password, null, $port, $socket);
 		}
 		catch (Exception $e)
 		{
